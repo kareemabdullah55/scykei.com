@@ -1,0 +1,95 @@
+/* Reset بسيط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* الهيدر */
+header {
+    background-color: #310ac8;
+    padding: 15px 0;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+header nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* العنوان الرئيسي */
+.achiever-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+.achiever-section h1 {
+    color: #310ac8;
+    margin-bottom: 30px;
+}
+.achiever-section h2 {
+    color: #310ac8;
+    margin: 30px 0 20px;
+}
+
+/* الشبكة */
+.achiever-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* الكروت */
+.achiever-card {
+    background-color: #faf9f6;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.achiever-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
+}
+.achiever-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #310ac8;
+}
+.achiever-card h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* الفوتر */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* للموبايل */
+@media (max-width: 600px) {
+    .achiever-card img {
+        width: 120px;
+        height: 120px;
+    }
+}
